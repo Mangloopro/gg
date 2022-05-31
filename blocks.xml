@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="s4d_login" id="mzJA%fISV.;Hn33voj0-" x="177" y="112">
+    <value name="TOKEN">
+      <block type="text" id="5U#=+X!t}CWZ?hf~3gTG">
+        <field name="TEXT">OTY3MzAxMDA0MDc0ODE1NTU4.GsyBQh.uLvrp3i5AsNqDNfkFn4gKizn_nJAa8SwYhyxyk</field>
+      </block>
+    </value>
+  </block>
+  <block type="s4d_on_message" id="fXlP/5R,V_qL/RCh@RV6" x="175" y="324">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id="k%AuxB8BPEcIAX2tAd9G">
+        <value name="IF0">
+          <block type="logic_compare" id="pQGCXZ|6J*3q|(rxp?Rs">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="s4d_message_content" id="il6ap%[SCPj|lLMbh}m6"></block>
+            </value>
+            <value name="B">
+              <block type="text" id="F!.kwwbo:W?Rpjp{P5:7">
+                <field name="TEXT">/kill</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="s4d_ban_member" id="85eqYLihd0;P}V}YdD+T">
+            <value name="MEMBER">
+              <block type="s4d_mentioned_member" id="^L;)Zj_kA96_9f2^$|if"></block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>
